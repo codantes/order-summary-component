@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,700;1,800;1,900&display=swap');
+
+:root{
+    --my-font: 'Red Hat Display', sans-serif;
+    --component-bg: hsl(225, 100%, 98%);
+    --para-font-color: hsl(224, 23%, 55%);
+    --plans-sec-color: hsl(225, 77%, 95%);
+    --button-color-hover:hsl(223, 47%, 23%);
+    --buttons-color:hsl(245, 75%, 52%);
+}
+
+body{
+    background-image: url('/images/pattern-background-mobile.svg');
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+    padding: 5px;
+}
+
+.main-component{
+    display: flexbox;
+    justify-content: center;
+    background: var(--component-bg);
+    width: 80%;
+    margin: 30px auto;
+    border-radius: 30px;
+
+}
+
+.hero-img > img{
+    width: 100%;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+}
+
+.about-order{
+    margin: 0px 15px;
+    font-family: var(--my-font);
+    text-align: center;
+}
+
+.about-order > h3{
+    font-weight: 900 ;
+    font-size: 18px;
+}
+.about-order > p{
+    font-weight: 600;
+    color:var(--para-font-color);
+}
+
+.about-plans{
+    display:flex;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    font-family: var(--my-font);
+    margin: 15px;
+    border-radius: 25px;
+    background: var(--plans-sec-color);
+}
+
+#music-icon{
+    height: 50px;
+}
+
+#plan{
+    font-weight: 700;
+}
+
+#price{
+    color: var(--para-font-color);
+}
+
+#change-opt{
+    color:var(--button-color);
+    transition: all ease 0.3s;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    padding: 0px;
+    font-family: var(--my-font);
+}
+
+#proceed-button{
+    margin: 10px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 14px;
+    border: none;
+    font-weight: 800;
+    color:whitesmoke;
+    background: var(--buttons-color) ;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.22); 
+box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.22);
+transition: all ease 0.3s;
+}
+
+#cancel-button{
+    margin: 10px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 14px;
+    border: none;
+    font-weight: 800;
+    color:rgb(102, 102, 102);
+    background: var(--plans-sec-color);
+    transition: all ease 0.3s;
+}
+
+#proceed-button:hover{
+    background:hsl(245, 84%, 66%); 
+}
+
+#change-opt:hover{
+    color: hsl(245, 66%, 64%);
+}
+
+#cancel-button:hover{
+    color:rgb(17, 17, 17);
+}
+
+@media screen and (min-width:600px) {
+    body{
+        background-image: url('/images/pattern-background-desktop.svg');
+    }
+
+    .main-component{
+        width: 40vw;
+    }
+
+}
+
+
+    
